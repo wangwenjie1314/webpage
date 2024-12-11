@@ -42,23 +42,23 @@ function App() {
       <div className="App">
         <h1>QoreID Demo</h1>
         <div style={{ margin: '20px' }}>
-        <qoreid-button
-            id="QoreIDButton"
-            clientId="A011XPUA3F6WBZ61OV3T"
-            // collectionId="16513"
-            productCode="liveness_nin" // liveness_bvn、liveness_nin
-            // flowId="16513"
-            customerReference="5705" // 生成唯一的客户引用
-            applicantData={JSON.stringify({
-                // bvn: '95888168924',
-                firstname: 'Bunch',
-                lastname: 'Dillon',
-                phone: '08000000000',
-            })}
-            onQoreIDSdkSubmitted="function(event){console.log('onQoreIDSdkSubmitted ----->', event)}"
-            onQoreIDSdkError={handleError}
-            onQoreIDSdkClosed={handleClosed}
-          ></qoreid-button>
+          <qoreid-button
+              id="QoreIDButton"
+              clientId="A011XPUA3F6WBZ61OV3T"
+              // collectionId="16513"
+              productCode="liveness_nin" // liveness_bvn、liveness_nin
+              // flowId="16513"
+              customerReference="5705" // 生成唯一的客户引用
+              applicantData={JSON.stringify({
+                  // bvn: '95888168924',
+                  firstname: 'Bunch',
+                  lastname: 'Dillon',
+                  phone: '08000000000',
+              })}
+              onQoreIDSdkSubmitted="function(event){console.log('onQoreIDSdkSubmitted ----->', event)}"
+              onQoreIDSdkError={handleError}
+              onQoreIDSdkClosed={handleClosed}
+            ></qoreid-button>
         </div>
       </div>
     );
